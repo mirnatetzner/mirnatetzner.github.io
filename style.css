@@ -131,7 +131,7 @@ header{
     justify-content: space-around;
 }
 
-@media screen and (max-width: 600px){
+@media (max-width: 600px){
 
 .game-window{
     background-color: rgba(253, 255, 255, 0.8);
