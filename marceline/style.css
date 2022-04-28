@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    background-color: rgb(90, 11, 11);
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@font-face {
+    font-family: "pieces-of-eight" ;
+    src: url(../font/Pieces\ of\ Eight.ttf);
+ }
+
+ 
+
+header{
+    width: 100%;
+    height: 6rem;
+    background-color: rgb(16, 19, 22, 0.8);
+    /* no-repeat cover;
+    position: relative;
+    background:fixed ; */
+
+}
+
+.corpo{
+    height: 100%;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.janela-do-jogo{
+    display: flex;
+    align-items: center;
+    width: 60vw;
+    margin: 3rem;
+    background-color: rgba(16, 19, 22, 0.8);
+    border-radius: 6px;
+    color: rgb(243, 247, 250);
+    box-shadow: 2px solid black;
+    padding: 2rem;
+    border: 3px;
+
+}
+
+
+.etapas{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+p{
+    margin: 1rem;
+    line-height: 4vh;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify; 
+    font-display: auto; 
+}
+
+
+
+
+h1{
+    
+    font-family: "pieces-of-eight";
+    color: rgb(204, 23, 23);
+    text-shadow: 2px 2px rgb(242, 239, 243) ; 
+    font-size: 5rem;
+    
+}
+
+#title{
+    margin: 2rem;
+    justify-items: center;
+    display: flex;
+
+}
+
+button{
+    width: fit-content;
+    height: fit-content;
+    padding: 3px;
+    border-radius: 7px;
+    background-color: rgb(221, 181, 0);
+    color: black;
+    font-family: pieces-of-eight;
+    font-size: 25px;
+}
+
+
+#reinicia-jogo{
+    width: fit-content;
+    height: fit-content;
+
+}

@@ -1,47 +1,142 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Adote aqui</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="#">
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <title>Fogo no parquinho</title>
 </head>
 
 
+
 <body>
+    <div class="content-holder">
+        <div class="game-window">
 
-    <div class="cabeca-navegacao">
-            <div class="cabeca-metade">
-                <a id="adote-aqui" href="#"><h1>Adote aqui!</h1></a>
+            <div class="main-menu" id="menu">
+                <div class="conteudo-menu">
+
+                    <h1 id="nome-jogo">Fogo no parquinho:</h1>
+
+                    <h2>Hora da Aventura</h2>
+                    <div class="textos-display">
+
+
+                        <div class="story-game">
+                            <p id="box-text-beggin">
+                                <strong> Durante uma grandiosa festa no Reino Doce, promovida pela dedicada Princesa
+                                    Jujuba, seus amigos e suditos celebram sua bem sucedida missão de trazer paz ao Povo
+                                    Doce.
+                                    O reino fora invadido por zumbis feitos de churros gigantes de chocolate barato. A
+                                    perspicácia de Jujuba, as habilidade de Marceline e a ajuda de seus amigos Finn e
+                                    Jake, contiveram os zumbis e o Reino Doce se tornou um lugar novamente repleto de
+                                    suspiros e sonhos. Tudo parecia estar na mais repleta harmonia na terra de Ooo.
+                                </strong>
+                            </p>
+                            <br>
+                        </div>
+
+                        <div class="story-game">
+                            <p id="box-text-beggin">
+                                <strong>Marceline estava tranquila na festa tomando um drink ao lado de sua amada
+                                    Jujuba. Rei Gelado estava reclamando com Princesa Caroço sobre a temperatura de sua
+                                    bebida. E Jake estava balbuciando em bando. Até que de repente começa uma discussão
+                                    fervorosa entre o imaturo Finn e a explosiva Princesa do Fogo.
+                                    A princesa acaba lançando fogo para todos os lados durante a briga e a festa que
+                                    parecia um belo jardim florido tão cuidado pela princesa Jujuba se transforma em uma
+                                    floresta em chamas.
+                                </strong>
+                            </p>
+                            <br>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="caixa-de-botoes">
+                        <button class="botao" id="about">
+                            <i class="fa fa-info"></i> Sobre
+                        </button>
+                        <button class="botao" id="play">
+                            <i class="fa fa-play"></i> Jogar!
+                        </button>
+                        <button class="botao" id="instruction">
+                            <i class="fa fa-book"></i> Instruções
+                        </button>
+                    </div>
+
+                </div>
+
+
             </div>
-            
-            <div class="cabeca-metade-2">
-                
-                <a href="#" class="links">
-                    <button><h4>Home</h4></button>
-                </a>    
-                
-                <a href="#" class="links">
-                    <button><h4>Sobre</h4></button>
-                </a>
 
-                <a href="#" class="links">
-                    <button><h4>Contato</h4></button>
-                </a>
+
+            <!-- ------------------------------------------------------------------- -->
+
+            <div class="choose-character" id="choose">
+
+                <div class="personagem" id="card-marceline">
+                    <div class="top-card">
+                        <div class="quadradinho-imagem-marceline"></div>
+                        <p class="nome-personagem">
+                        <h3>Marceline, a Rainha Vampira</h3>
+                        </p>
+                    </div>
+
+                    <div class="texto-descricao">
+                        <h4>
+                            Ao contrário dos vampiros convencionais, ela não precisa de sangue para viver, apenas se
+                            alimentando da cor vermelha. Ela é uma ávida musicista e cantora.
+
+                        </h4>
+                    </div>
+                    <button class="botao-choose" id="bt-marceline">Selecionar!</button>
+                </div>
+
+                <div class="personagem" id="card-rei-gelado">
+                    <div class="top-card">
+                        <div class="quadradinho-imagem-rei-gelado"></div>
+                        <p class="nome-personagem">
+                        <h3>Simon Petrikov, para os íntimos: Rei Gelado</h3>
+                        </p>
+                    </div>
+                    <div class="texto-descricao">
+                        <h4>
+                            Simon era um humano e historiador quando achou a coroa e foi cada vez mais se transformando
+                            no
+                            que é. Um Rei com super poderes e moral distorcida, com suas percepção alteradas pela
+                            influência
+                            da coroa.
+                        </h4>
+                    </div>
+                    <button class="botao-choose" id="bt-rei-gelado">Selecionar!</button>
+                </div>
+
+                <div class="personagem" id="card-jake">
+                    <div class="top-card">
+                        <div class="quadradinho-imagem-jake"></div>
+                        <p class="nome-personagem">
+                        <h3>Jake, o Cão</h3>
+                        </p>
+                    </div>
+                    <div class="texto-descricao">
+                        <h4>
+                            Ele é um híbrido de cão/metamorfo, referido pelos outros como um "cão mágico", Jake tem
+                            poder de
+                            se transformar em qualquer coisa...<br><br>Qualquer coisa mesmo!
+                        </h4>
+                    </div>
+                    <button class="botao-choose" id="bt-jake">Selecionar!</button>
+                </div>
+
 
             </div>
+        </div>
     </div>
-    
-    
+    <script src="./index.js"> </script>
 </body>
 
-<footer class="rodape">
- 
-    <div class="direito-uso">&copy; Todos os direitos reservados</div> 
-
-</footer>
 </html>
-
