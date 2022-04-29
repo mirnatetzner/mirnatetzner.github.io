@@ -194,6 +194,7 @@ p{
     color: #ffff;
     background-color: rgba(148, 11, 11, 0.7);
 
+
 }
 
 .botao:hover,
@@ -226,7 +227,8 @@ p{
     justify-content: space-between;
     align-items: center;
     border-radius: 7px;
-    
+    box-shadow: 3px 3px 7px 7px rgba(150, 81, 16, 0.5);
+
 }
 
 
