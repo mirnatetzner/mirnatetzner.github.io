@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-body, html {
+body, html{
     width: 100%; 
     height: 100%;
     
@@ -15,7 +15,7 @@ body, html {
 }
 
 
-body{
+body,.instruction {
     background-image: url('./img/party.gif');
     background-size: cover;
     background-repeat: no-repeat;
@@ -109,7 +109,7 @@ header{
 }
 
 
-#box-text-beggin{
+#box-text-beggin,#box-text-instruction{
     display: flex;
     font-size: 20x;
     width: 40vw;
@@ -121,7 +121,16 @@ header{
     margin: 2rem;
 
 }
-
+#box-text-instruction{
+    width: 40vw;
+    margin: 2rem;
+}
+#game-instrucao{
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
 
 .caixa-de-botoes{
     width: 80%;

@@ -20,6 +20,11 @@ body, html{
 body{
     background-color: #F2F2F0;
 }
+p{
+    margin: 2rem;
+    width: 20rem;
+    height: auto;
+}
 
 
 .navegacao{
@@ -50,43 +55,48 @@ a{
     background-color: rgb(191, 6, 6,0.7);
     font-size: 25px;
 }
+h1{
+    font-size: 4rem;
+    color:#611c1c;
+
+}
 .principal{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
     margin-left: 3rem;
     margin-right: 5rem;
     height: 100%;
     background-color: rgb(217, 166, 137,0.3);
+    height: 90rem;
 }
 
+
 #perfil{
-    margin: 3rem;
+    margin: 2rem;
     border-radius: 50%;
     box-shadow: 5px 5px 2px 5px #730303;
 }
 
 #resilia{
+    width: 25%;
     border: 3rem solid rgb(32, 4, 30,0.9);
     border-radius: 50%;
     box-shadow: 5px 5px 6px 5px rgba(8, 8, 8, 0.9);
 
 }
 
-.first-section{
+.first-section, .second-section{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 50%;
+    /* width: 50%; */
+    
 }
-.second-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-       width: 50%;
 
-}
 
 footer{
     display: flex;
@@ -119,4 +129,20 @@ footer{
 
 .botao:hover {
   transform: translateY(-1px);
+}
+
+#fluxograma{
+    margin: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 8px 12px;
+    border-radius: 10%;
+}
+
+@media (max-width: 600px) {
+.principal{
+    flex-direction: column;
+}
+.caixa-texto{
+    
+}
+
 }
