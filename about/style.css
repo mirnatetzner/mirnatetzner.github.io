@@ -1,9 +1,4 @@
-/* 
-#730303 -vermelho escurao e fechado
-#BF0606 - vermelho escuro
-#F20707 - vermelho vivo
-#D9A689 - rosa
-#F2F2F0 -quase branco */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -20,41 +15,78 @@ body, html{
 body{
     background-color: #F2F2F0;
 }
-p{
-    margin: 2rem;
-    width: 20rem;
-    height: auto;
-}
-
 
 .navegacao{
     height: 5rem;
+    background-color: #D9A689;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+nav{
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
-    background-color: #D9A689;
-
-}
-
-
-.links{
-    margin: 2rem
+    justify-content: space-between;
+    width: 50%;
 }
 
 a{
+    font-family: 'Arial Narrow Bold', sans-serif;
     text-decoration: none;
+    font-size: 20px;
+    color:#ce0101;
+}
+a:hover{
+    color:#992e2e;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+#curri:hover{
+    background-color:#ffffff;
+}
+#linke:hover{
+    background-color:#ffffff;
+
+}
+#git:hover{
+    background-color:#ffffff;
+}
+#curri{
+    background-color: #d6d6d6;
+}
+#linke{
+    background-color: #d1b0b0;
 }
 
+#git{
+    background-color: #d18f8f;
+}
 #titulo{
-    height: 3rem;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: rgb(191, 6, 6,0.7);
-    font-size: 25px;
+    text-shadow: 2px 2px #d6d6d6;
+    font-size: 3.5rem;
 }
+
+
+#titulo:hover{
+    color:#fcfcfc;
+    text-shadow: 2px 2px rgb(191, 6, 6,0.7);
+}
+
 h1{
     font-size: 4rem;
     color:#611c1c;
@@ -65,12 +97,10 @@ h1{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: baseline;
-    margin-left: 3rem;
-    margin-right: 5rem;
-    height: 100%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 4rem;
     background-color: rgb(217, 166, 137,0.3);
-    height: 90rem;
 }
 
 
@@ -80,21 +110,19 @@ h1{
     box-shadow: 5px 5px 2px 5px #730303;
 }
 
-#resilia{
-    width: 25%;
-    border: 3rem solid rgb(32, 4, 30,0.9);
-    border-radius: 50%;
-    box-shadow: 5px 5px 6px 5px rgba(8, 8, 8, 0.9);
-
-}
-
-.first-section, .second-section{
+.section{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    /* width: 50%; */
     
+}
+#bio{
+    line-height: 1.8;
+}
+#citacao{
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
 }
 
 
@@ -140,9 +168,6 @@ footer{
 @media (max-width: 600px) {
 .principal{
     flex-direction: column;
-}
-.caixa-texto{
-    
 }
 
 }
